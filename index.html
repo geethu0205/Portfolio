@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Geethika | Portfolio & Credentials</title>
+    <meta name="description" content="Portfolio of A Geethika, Computer Science student specializing in Cloud Computing at SRM IST. View projects, experience, research, and verified certifications.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Custom Cursor Glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="scrollProgress"></div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="#" class="logo">
+                <span class="logo-accent">&lt;</span>Geethika<span class="logo-accent"> /&gt;</span>
+            </a>
+            <nav class="navbar" id="navbar">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="assets/resume.pdf" class="btn btn-outline btn-sm download-resume" download>
+                    <i class="fa-solid fa-download"></i> Resume
+                </a>
+                <button class="mobile-nav-toggle" id="navToggle" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-bg-glow"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="hero-greeting">Hi, I'm Geethika</span>
+                    <h1 class="hero-title">A Geethika</h1>
+                    <div class="hero-subtitle-container">
+                        <span class="hero-subtitle-prefix">I am a </span>
+                        <span class="hero-subtitle" id="typingText"></span><span class="typing-cursor">|</span>
+                    </div>
+                    <p class="hero-description">
+                        Computer Science & Engineering undergraduate specializing in Cloud Computing at SRM University of Science and Technology. I design and build scalable cloud-based environments, end-to-end data pipelines, and machine learning architectures.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-outline">Let's Connect</a>
+                    </div>
+                    <div class="hero-socials">
+                        <a href="https://www.linkedin.com/in/geethika-a-8339181ba" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:reddyageethika@gmail.com" aria-label="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <a href="tel:+918788074109" aria-label="Phone">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <div class="image-border-glow"></div>
+                    <div class="hero-image-container">
+                        <!-- User Photo -->
+                        <img src="assets/images/geethika.jpg" alt="A Geethika" class="hero-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Overview</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-underline"></div>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-info">
+                        <h3>Educating Myself for the Cloud Era</h3>
+                        <p>
+                            I am currently pursuing my <strong>B.Tech in Computer Science and Engineering with a specialization in Cloud Computing</strong> at SRM Institute of Science and Technology. My academic and practical focus revolves around understanding virtualization, distributed networks, and how modern AI workflows can be scaled securely in the cloud.
+                        </p>
+                        <p>
+                            With a strong academic track record (CGPA of 9.65) and a hands-on approach to building solutions, I focus on bridging the gap between raw data processing and client-side web application logic.
+                        </p>
+                        
+                        <div class="info-counters">
+                            <div class="counter-card">
+                                <span class="counter-num">9.65</span>
+                                <span class="counter-label">SRM IST CGPA</span>
+                            </div>
+                            <div class="counter-card">
+                                <span class="counter-num">4+</span>
+                                <span class="counter-label">AWS Badges/Certs</span>
+                            </div>
+                            <div class="counter-card">
+                                <span class="counter-num">1</span>
+                                <span class="counter-label">IEEE Research Paper</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-education">
+                        <h3>Education History</h3>
+                        <div class="education-timeline">
+                            <!-- Education Item 1 -->
+                            <div class="education-item">
+                                <div class="edu-dot"></div>
+                                <div class="edu-header">
+                                    <span class="edu-date">2023 - 2027</span>
+                                    <h4>B.Tech in Computer Science (Cloud Computing)</h4>
+                                </div>
+                                <p class="edu-inst">SRM University of Science and Technology, Kattankulathur</p>
+                                <span class="edu-grade">CGPA: 9.65 / 10.0</span>
+                            </div>
+
+                            <!-- Education Item 2 -->
+                            <div class="education-item">
+                                <div class="edu-dot"></div>
+                                <div class="edu-header">
+                                    <span class="edu-date">2021 - 2023</span>
+                                    <h4>Class XII (CBSE - MPC)</h4>
+                                </div>
+                                <p class="edu-inst">Narayana Junior College, Hyderabad</p>
+                                <span class="edu-grade">Percentage: 80.6%</span>
+                            </div>
+
+                            <!-- Education Item 3 -->
+                            <div class="education-item">
+                                <div class="edu-dot"></div>
+                                <div class="edu-header">
+                                    <span class="edu-date">2021</span>
+                                    <h4>Class X (CBSE)</h4>
+                                </div>
+                                <p class="edu-inst">Narayana E-Techno School, Mumbai</p>
+                                <span class="edu-grade">Percentage: 94.6%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Capabilities</span>
+                    <h2 class="section-title">Technical Expertise</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Languages -->
+                    <div class="skills-card">
+                        <div class="skills-card-icon">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <h3>Programming Languages</h3>
+                        <ul class="skills-list">
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>C++</li>
+                            <li>SQL</li>
+                        </ul>
+                    </div>
+
+                    <!-- Cloud -->
+                    <div class="skills-card">
+                        <div class="skills-card-icon">
+                            <i class="fa-solid fa-cloud"></i>
+                        </div>
+                        <h3>Cloud Infrastructure</h3>
+                        <ul class="skills-list">
+                            <li>AWS (EC2, S3, RDS, Lambda)</li>
+                            <li>IAM & Security Management</li>
+                            <li>API Gateway</li>
+                            <li>Virtualization & Deployments</li>
+                        </ul>
+                    </div>
+
+                    <!-- Data & ML -->
+                    <div class="skills-card">
+                        <div class="skills-card-icon">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+                        <h3>Data & AI/ML</h3>
+                        <ul class="skills-list">
+                            <li>Apache Spark & Hadoop</li>
+                            <li>XGBoost & TensorFlow.js</li>
+                            <li>Pandas & NumPy</li>
+                            <li>Data Pipelines & ETL</li>
+                        </ul>
+                    </div>
+
+                    <!-- Core CS -->
+                    <div class="skills-card">
+                        <div class="skills-card-icon">
+                            <i class="fa-solid fa-gears"></i>
+                        </div>
+                        <h3>Core Computer Science</h3>
+                        <ul class="skills-list">
+                            <li>Data Structures & Algorithms</li>
+                            <li>Object Oriented Programming</li>
+                            <li>Database Management (DBMS)</li>
+                            <li>Computer Networks & OS</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">My Work</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="development">Software Dev</button>
+                    <button class="filter-btn" data-filter="cloud">Cloud & Big Data</button>
+                    <button class="filter-btn" data-filter="ml">AI & ML</button>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card" data-category="cloud">
+                        <div class="project-card-header">
+                            <span class="project-tag">Big Data & ML</span>
+                            <h3>Smart Food Flow</h3>
+                        </div>
+                        <div class="project-card-body">
+                            <p>An AI-driven inventory management solution to forecast food demand and optimize stock planning. Built scalable data pipelines using Hadoop and Apache Spark to process inventory logs, performing feature engineering and training an XGBoost classifier with 99% accuracy to target a 45% reduction in waste.</p>
+                        </div>
+                        <div class="project-tech-tags">
+                            <span>Python</span>
+                            <span>Hadoop</span>
+                            <span>Spark</span>
+                            <span>SQL</span>
+                            <span>XGBoost</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card" data-category="ml">
+                        <div class="project-card-header">
+                            <span class="project-tag">AI/ML</span>
+                            <h3>ADMRI</h3>
+                        </div>
+                        <div class="project-card-body">
+                            <p>Adaptive Digital Mental Risk Index (ADMRI) is a web-based AI assessment platform for automated risk classification from questionnaires. Implemented client-side ML model inference directly in the browser using TensorFlow.js, establishing visual result diagnostics for immediate feedback.</p>
+                        </div>
+                        <div class="project-tech-tags">
+                            <span>Python</span>
+                            <span>TensorFlow.js</span>
+                            <span>ML</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card" data-category="development">
+                        <div class="project-card-header">
+                            <span class="project-tag">Java Development</span>
+                            <h3>IntelliAC</h3>
+                        </div>
+                        <div class="project-card-body">
+                            <p>A smart AC power management system designed to monitor and automate classroom AC control based on environmental usage. Implemented structural object-oriented modules in Java to optimize power consumption, reducing unnecessary operational utility costs.</p>
+                        </div>
+                        <div class="project-tech-tags">
+                            <span>Java</span>
+                            <span>OOP</span>
+                            <span>Control Logic</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Internships</span>
+                    <h2 class="section-title">Work Experience</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="experience-timeline">
+                    <!-- Internship 1 -->
+                    <div class="experience-card">
+                        <div class="exp-badge">Internship</div>
+                        <div class="exp-content">
+                            <div class="exp-header">
+                                <div>
+                                    <h3>Cloud Virtual Internship</h3>
+                                    <p class="exp-company">Virtual Experience</p>
+                                </div>
+                                <span class="exp-date">Jan 2025 – Mar 2025</span>
+                            </div>
+                            <ul class="exp-details">
+                                <li>Gained practical exposure to cloud computing, virtualization, and deployment environments.</li>
+                                <li>Worked with core concepts regarding resource management, scalability patterns, and infrastructure configuration.</li>
+                                <li>Analyzed the architectural differences between cloud services and their overall impact on application availability.</li>
+                            </ul>
+                            <div class="exp-footer">
+                                <a href="https://drive.google.com/file/d/10pvS7xWRkJ8wbOo7r23ygYeVhOz8YmXg/view?usp=drive_link" target="_blank" rel="noopener" class="btn btn-outline btn-sm proof-btn">
+                                    <i class="fa-solid fa-circle-check"></i> Verify Proof Certificate
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Internship 2 -->
+                    <div class="experience-card">
+                        <div class="exp-badge">Internship</div>
+                        <div class="exp-content">
+                            <div class="exp-header">
+                                <div>
+                                    <h3>Google Android Developer Virtual Internship</h3>
+                                    <p class="exp-company">AICTE Virtual Internship Program</p>
+                                </div>
+                                <span class="exp-date">Jul 2025 – Sep 2025</span>
+                            </div>
+                            <ul class="exp-details">
+                                <li>Completed a rigorous 3-month virtual program focused on mobile application workflows and SDK integration.</li>
+                                <li>Developed clean UI components and managed Android application lifecycles using XML layouts and Kotlin/Java.</li>
+                                <li>Applied best practice development patterns and Android design principles to build functional mobile app components.</li>
+                            </ul>
+                            <div class="exp-footer">
+                                <a href="https://drive.google.com/file/d/1N98toLB-eL-aGApJIMZypqNxMXeRUw_2/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-outline btn-sm proof-btn">
+                                    <i class="fa-solid fa-circle-check"></i> Verify Proof Certificate
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="certifications-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Credentials</span>
+                    <h2 class="section-title">Verified Certifications</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="certifications-grid">
+                    <!-- AWS SA -->
+                    <div class="cert-card">
+                        <div class="cert-image-container">
+                            <img src="assets/images/aws-certified-solutions-architect-associate.png" alt="AWS Certified Solutions Architect - Associate Badge" class="cert-badge-img">
+                        </div>
+                        <div class="cert-info">
+                            <h3>AWS Certified Solutions Architect - Associate</h3>
+                            <p class="cert-issuer">Issued by Amazon Web Services</p>
+                            <span class="cert-date">April 2026</span>
+                            <a href="https://drive.google.com/file/d/1kvPPBBZk2hOuCqN7L65Lmuts5cWeU1N7/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-outline btn-sm cert-verify-btn">
+                                <i class="fa-solid fa-circle-check"></i> View Verified Proof
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- AWS CP -->
+                    <div class="cert-card">
+                        <div class="cert-image-container">
+                            <img src="assets/images/aws-certified-cloud-practitioner.png" alt="AWS Certified Cloud Practitioner Badge" class="cert-badge-img">
+                        </div>
+                        <div class="cert-info">
+                            <h3>AWS Certified Cloud Practitioner</h3>
+                            <p class="cert-issuer">Issued by Amazon Web Services</p>
+                            <span class="cert-date">April 2026</span>
+                            <a href="https://drive.google.com/file/d/1S_O7OIigZmVBHr3_5UwWJYyZUVExq-sA/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-outline btn-sm cert-verify-btn">
+                                <i class="fa-solid fa-circle-check"></i> View Verified Proof
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- SAP Generative AI -->
+                    <div class="cert-card">
+                        <div class="cert-icon-container">
+                            <i class="fa-solid fa-microchip"></i>
+                        </div>
+                        <div class="cert-info">
+                            <h3>SAP Generative AI Developer</h3>
+                            <p class="cert-issuer">Issued by SAP</p>
+                            <span class="cert-date">Mar 2026 – Mar 2027</span>
+                            <a href="https://drive.google.com/file/d/1an8q6tNihUCcvzFs6z9SauU-8ELoGtae/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-outline btn-sm cert-verify-btn">
+                                <i class="fa-solid fa-circle-check"></i> View Verified Proof
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- NASA Space Settlement -->
+                    <div class="cert-card">
+                        <div class="cert-icon-container">
+                            <i class="fa-solid fa-user-astronaut"></i>
+                        </div>
+                        <div class="cert-info">
+                            <h3>NSS Space Settlement Award</h3>
+                            <p class="cert-issuer">Issued by NASA & NSS</p>
+                            <span class="cert-date">Mar 2021</span>
+                            <a href="https://drive.google.com/file/d/1z1i3t_VLtX3tuyaS-2WXdDkeSdfHXxxF/view?usp=drive_link" target="_blank" rel="noopener" class="btn btn-outline btn-sm cert-verify-btn">
+                                <i class="fa-solid fa-circle-check"></i> View Verified Proof
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Research Paper Card (IEEE) -->
+                <div class="research-container">
+                    <div class="research-header">
+                        <i class="fa-solid fa-file-invoice"></i>
+                        <h3>Published Research Paper</h3>
+                    </div>
+                    <div class="research-body">
+                        <span class="publication-tag">IEEE - Jan 2026</span>
+                        <h4>Intelligent Food Inventory Management System</h4>
+                        <p class="research-desc">Published research outlining automated workflows for real-time inventory levels, prediction modeling, and stock decay categorization to mitigate waste in institutional configurations.</p>
+                        <a href="https://ieeexplore.ieee.org/document/11479138/" target="_blank" rel="noopener" class="btn btn-primary btn-sm research-link-btn">
+                            <i class="fa-solid fa-up-right-from-square"></i> Read on IEEE Xplore
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Reach Out</span>
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info-panel">
+                        <h3>Connect With Me</h3>
+                        <p>Feel free to reach out for project collaboration, job opportunities, or general queries regarding cloud architecture and ML pipelines.</p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div>
+                                    <h4>Email</h4>
+                                    <a href="mailto:reddyageethika@gmail.com">reddyageethika@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <a href="tel:+918788074109">+91 87880 74109</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div>
+                                    <h4>Location</h4>
+                                    <span>Chennai, Tamil Nadu, India</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-social-pills">
+                            <a href="https://www.linkedin.com/in/geethika-a-8339181ba" target="_blank" rel="noopener">
+                                <i class="fa-brands fa-linkedin-in"></i> LinkedIn Connection
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" required placeholder="Enter your name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" required placeholder="Enter your email">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" rows="5" required placeholder="Write your message here..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">
+                                <i class="fa-solid fa-paper-plane"></i> Send Message
+                            </button>
+                            <div class="form-status" id="formStatus"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-bottom">
+        <div class="container">
+            <p>&copy; 2026 A Geethika. All rights reserved. Verified Credentials via Google Drive & IEEE.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
