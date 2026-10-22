@@ -781,6 +781,7 @@ section:nth-of-type(even) {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
+    margin-bottom: 18px;
 }
 
 .project-tech-tags span {
@@ -791,6 +792,65 @@ section:nth-of-type(even) {
     color: var(--color-text-muted);
     padding: 4px 12px;
     border-radius: 15px;
+}
+
+.project-bullets {
+    margin: 12px 0 16px;
+    padding-left: 18px;
+    list-style: disc;
+    color: var(--color-text-muted);
+    font-size: 0.88rem;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.project-card-footer {
+    margin-top: auto;
+    padding-top: 18px;
+    border-top: 1px solid var(--border-card);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.btn-project-live {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--color-accent-gradient);
+    color: #ffffff !important;
+    font-size: 0.85rem;
+    font-weight: 700;
+    padding: 8px 18px;
+    border-radius: 8px;
+    box-shadow: var(--shadow-glow);
+    transition: all var(--transition-fast);
+}
+
+.btn-project-live:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px -4px rgba(37, 99, 235, 0.4);
+}
+
+.btn-project-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--bg-primary);
+    border: 1px solid var(--border-card);
+    color: var(--color-text-muted);
+    font-size: 0.82rem;
+    font-weight: 600;
+    padding: 7px 14px;
+    border-radius: 8px;
+    transition: all var(--transition-fast);
+}
+
+.btn-project-secondary:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
 }
 
 /* Experience Section Timeline */

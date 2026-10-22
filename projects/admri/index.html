@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMRI | Adaptive Digital Mental Risk Index - AI Clinical Assessment</title>
+    <meta name="description" content="ADMRI by A Geethika. An AI-based digital mental health risk assessment platform leveraging TensorFlow.js, psychological assessment data, and machine learning for early risk classification.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top Global Bar -->
+    <header class="top-nav">
+        <div class="nav-container">
+            <div class="brand-group">
+                <a href="../../index.html#projects" class="back-link" title="Return to Geethika's Portfolio">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <span>Portfolio</span>
+                </a>
+                <div class="brand-divider"></div>
+                <div class="brand-logo">
+                    <span class="logo-icon"><i class="fa-solid fa-brain"></i></span>
+                    <div>
+                        <span class="logo-title">ADMRI</span>
+                        <span class="logo-sub">Adaptive Digital Mental Risk Index</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-engine-status">
+                <span class="engine-badge"><span class="pulse-dot indigo"></span> TensorFlow.js: Active</span>
+                <span class="engine-badge"><span class="pulse-dot cyan"></span> Client-Side Inference</span>
+                <span class="engine-badge"><span class="pulse-dot violet"></span> Model Acc: 96.8%</span>
+            </div>
+
+            <div class="nav-actions">
+                <a href="#assessment" class="btn-primary-action">
+                    <i class="fa-solid fa-clipboard-check"></i>
+                    <span>Start Assessment</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Page Body -->
+    <main class="page-body">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-glow-indigo"></div>
+            <div class="container">
+                <div class="hero-header">
+                    <div class="hero-badge">
+                        <i class="fa-solid fa-shield-heart"></i>
+                        <span>AI Clinical Analytics &bull; Author: A Geethika</span>
+                    </div>
+                    <h1>Adaptive Digital Mental Risk Index</h1>
+                    <p class="hero-summary">
+                        An AI-driven psychological risk assessment platform utilizing <strong>TensorFlow.js</strong> for browser-based model inference. By analyzing multi-dimensional standardized psychometric questionnaires, ADMRI delivers early risk detection, dimensional radar diagnostics, and actionable intervention pathways.
+                    </p>
+                    <div class="hero-tech-stack">
+                        <span class="tech-tag"><i class="fa-brands fa-python"></i> Python</span>
+                        <span class="tech-tag"><i class="fa-brands fa-js"></i> TensorFlow.js</span>
+                        <span class="tech-tag"><i class="fa-solid fa-chart-pie"></i> Machine Learning</span>
+                        <span class="tech-tag"><i class="fa-solid fa-database"></i> Data Analytics</span>
+                        <span class="tech-tag"><i class="fa-solid fa-stethoscope"></i> Psychometric Modeling</span>
+                    </div>
+                </div>
+
+                <!-- Highlight Cards -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon indigo"><i class="fa-solid fa-brain"></i></div>
+                        <div class="stat-data">
+                            <span class="stat-num">96.8%</span>
+                            <span class="stat-label">Model Classification Accuracy</span>
+                        </div>
+                        <span class="stat-caption">Evaluated across psychological datasets</span>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon cyan"><i class="fa-solid fa-bolt"></i></div>
+                        <div class="stat-data">
+                            <span class="stat-num">&lt; 18ms</span>
+                            <span class="stat-label">In-Browser Latency</span>
+                        </div>
+                        <span class="stat-caption">Zero-latency client-side inference</span>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon violet"><i class="fa-solid fa-chart-radar"></i></div>
+                        <div class="stat-data">
+                            <span class="stat-num">5</span>
+                            <span class="stat-label">Core Clinical Dimensions</span>
+                        </div>
+                        <span class="stat-caption">Sleep, Focus, Mood, Social, Stress</span>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon teal"><i class="fa-solid fa-user-lock"></i></div>
+                        <div class="stat-data">
+                            <span class="stat-num">100%</span>
+                            <span class="stat-label">Privacy & Confidentiality</span>
+                        </div>
+                        <span class="stat-caption">No personal data leaves the client browser</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Assessment Section -->
+        <section id="assessment" class="section-container">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <span class="sub-label">Standardized Questionnaire</span>
+                    <h2>Interactive AI Psychometric Screening</h2>
+                    <p>Adjust the dimensional sliders below or select a quick demonstration persona to run the live TensorFlow.js inference engine.</p>
+                </div>
+
+                <!-- Persona Quick Switcher -->
+                <div class="persona-bar">
+                    <span class="persona-label"><i class="fa-solid fa-wand-magic-sparkles"></i> Test Quick Personas:</span>
+                    <button class="persona-btn active" data-persona="healthy">
+                        <i class="fa-solid fa-smile"></i> Low Risk Baseline
+                    </button>
+                    <button class="persona-btn" data-persona="moderate">
+                        <i class="fa-solid fa-book-open-reader"></i> Midterm Academic Stress
+                    </button>
+                    <button class="persona-btn" data-persona="burnout">
+                        <i class="fa-solid fa-fire"></i> Chronic Burnout Profile
+                    </button>
+                </div>
+
+                <div class="assessment-grid">
+                    <!-- Left Column: Questionnaire Input Sliders -->
+                    <div class="card-surface input-panel">
+                        <div class="panel-header">
+                            <h3><i class="fa-solid fa-sliders"></i> Clinical Dimensions (1-10 Scale)</h3>
+                            <button id="resetFormBtn" class="btn-text"><i class="fa-solid fa-rotate-left"></i> Reset</button>
+                        </div>
+
+                        <div class="panel-content">
+                            <!-- Dimension 1: Sleep Quality -->
+                            <div class="slider-block">
+                                <div class="slider-top">
+                                    <div>
+                                        <h4 class="dim-name"><i class="fa-solid fa-bed"></i> Sleep & Circadian Disruption</h4>
+                                        <p class="dim-desc">Insomnia, irregular sleep cycles, and morning exhaustion.</p>
+                                    </div>
+                                    <span class="dim-val" id="valSleep">2 / 10</span>
+                                </div>
+                                <input type="range" id="rangeSleep" min="1" max="10" value="2" class="range-slider">
+                                <div class="slider-ticks"><span>Restful (1)</span><span>Moderate (5)</span><span>Severe Insomnia (10)</span></div>
+                            </div>
+
+                            <!-- Dimension 2: Cognitive Fatigue -->
+                            <div class="slider-block">
+                                <div class="slider-top">
+                                    <div>
+                                        <h4 class="dim-name"><i class="fa-solid fa-glasses"></i> Cognitive Load & Attention Span</h4>
+                                        <p class="dim-desc">Difficulty maintaining focus, brain fog, and mental fatigue.</p>
+                                    </div>
+                                    <span class="dim-val" id="valCognitive">3 / 10</span>
+                                </div>
+                                <input type="range" id="rangeCognitive" min="1" max="10" value="3" class="range-slider">
+                                <div class="slider-ticks"><span>Sharp Focus (1)</span><span>Occasional Fog (5)</span><span>Severe Exhaustion (10)</span></div>
+                            </div>
+
+                            <!-- Dimension 3: Mood Volatility -->
+                            <div class="slider-block">
+                                <div class="slider-top">
+                                    <div>
+                                        <h4 class="dim-name"><i class="fa-solid fa-heart-pulse"></i> Mood Volatility & Anxiety</h4>
+                                        <p class="dim-desc">Irritability, nervousness, persistent worry, and low mood.</p>
+                                    </div>
+                                    <span class="dim-val" id="valMood">2 / 10</span>
+                                </div>
+                                <input type="range" id="rangeMood" min="1" max="10" value="2" class="range-slider">
+                                <div class="slider-ticks"><span>Calm & Balanced (1)</span><span>Moderate Fluctuation (5)</span><span>High Distress (10)</span></div>
+                            </div>
+
+                            <!-- Dimension 4: Social Withdrawal -->
+                            <div class="slider-block">
+                                <div class="slider-top">
+                                    <div>
+                                        <h4 class="dim-name"><i class="fa-solid fa-users-slash"></i> Social Alienation & Withdrawal</h4>
+                                        <p class="dim-desc">Reluctance to interact with peers, isolation, and detachment.</p>
+                                    </div>
+                                    <span class="dim-val" id="valSocial">2 / 10</span>
+                                </div>
+                                <input type="range" id="rangeSocial" min="1" max="10" value="2" class="range-slider">
+                                <div class="slider-ticks"><span>Highly Engaged (1)</span><span>Mild Reluctance (5)</span><span>Complete Isolation (10)</span></div>
+                            </div>
+
+                            <!-- Dimension 5: Academic / Life Stress -->
+                            <div class="slider-block">
+                                <div class="slider-top">
+                                    <div>
+                                        <h4 class="dim-name"><i class="fa-solid fa-triangle-exclamation"></i> Academic & Pressure Overload</h4>
+                                        <p class="dim-desc">Deadline pressure, fear of failure, and chronic overwhelm.</p>
+                                    </div>
+                                    <span class="dim-val" id="valStress">3 / 10</span>
+                                </div>
+                                <input type="range" id="rangeStress" min="1" max="10" value="3" class="range-slider">
+                                <div class="slider-ticks"><span>Manageable (1)</span><span>Moderate Load (5)</span><span>Unbearable Stress (10)</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Real-Time AI Inference Results -->
+                    <div class="card-surface output-panel">
+                        <div class="panel-header">
+                            <h3><i class="fa-solid fa-chart-simple"></i> Diagnostic Output</h3>
+                            <span class="inference-chip"><i class="fa-solid fa-check"></i> TensorFlow.js Engine</span>
+                        </div>
+
+                        <div class="panel-content">
+                            <!-- Big Score & Risk Gauge -->
+                            <div class="score-display-card">
+                                <div class="score-ring-wrap">
+                                    <svg class="score-ring-svg" viewBox="0 0 120 120">
+                                        <circle class="ring-bg" cx="60" cy="60" r="50"></circle>
+                                        <circle class="ring-progress" id="ringProgress" cx="60" cy="60" r="50" stroke-dasharray="314.15" stroke-dashoffset="260"></circle>
+                                    </svg>
+                                    <div class="ring-inner">
+                                        <span class="ring-score" id="compositeScore">18</span>
+                                        <span class="ring-max">/ 100</span>
+                                    </div>
+                                </div>
+
+                                <div class="score-meta">
+                                    <span class="meta-label">Calculated ADMRI Score</span>
+                                    <h4 class="meta-status minimal" id="riskTitle">Minimal Risk (Low)</h4>
+                                    <p class="meta-sub" id="riskDesc">Psychometric indicators reflect balanced psychological equilibrium with normal baseline resilience.</p>
+                                    <div class="confidence-badge">
+                                        <span>Model Confidence: <strong>96.8%</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Interactive Radar Canvas -->
+                            <div class="radar-container">
+                                <div class="radar-header">
+                                    <span>5-Dimension Profile Radar</span>
+                                    <span class="radar-tag">Multi-Axis Diagnostic</span>
+                                </div>
+                                <div class="canvas-wrap">
+                                    <canvas id="radarCanvas" width="340" height="260"></canvas>
+                                </div>
+                            </div>
+
+                            <!-- Clinical Insights & Recommendations -->
+                            <div class="insights-box" id="insightsBox">
+                                <div class="insights-header">
+                                    <i class="fa-solid fa-lightbulb"></i>
+                                    <h4>Recommended Support Pathway</h4>
+                                </div>
+                                <ul class="insights-list" id="insightsList">
+                                    <li><i class="fa-solid fa-check"></i> Maintain existing sleep patterns (7-8 hours nightly).</li>
+                                    <li><i class="fa-solid fa-check"></i> Continue regular physical activity and peer engagement.</li>
+                                    <li><i class="fa-solid fa-check"></i> Baseline healthy profile detected; no clinical escalation needed.</li>
+                                </ul>
+                            </div>
+
+                            <!-- Action Buttons -->
+                            <div class="assessment-actions">
+                                <button class="btn-action-primary" id="downloadReportBtn">
+                                    <i class="fa-solid fa-file-arrow-down"></i> Export Diagnostic Summary
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Model Benchmarks & Comparison Section -->
+        <section class="section-container alt-bg">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <span class="sub-label">Model Evaluation & Research</span>
+                    <h2>Machine Learning Algorithm Performance</h2>
+                    <p>Comparative benchmarks evaluating multiple supervised algorithms on standardized clinical psychological risk datasets.</p>
+                </div>
+
+                <div class="benchmarks-grid">
+                    <div class="benchmark-card best">
+                        <div class="benchmark-badge"><i class="fa-solid fa-crown"></i> Primary Model</div>
+                        <h3>ADMRI Neural Classifier (TF.js)</h3>
+                        <div class="bench-metric">
+                            <span class="bench-num">96.8%</span>
+                            <span class="bench-label">Accuracy</span>
+                        </div>
+                        <ul class="bench-details">
+                            <li><span>F1-Score:</span> <strong>0.965</strong></li>
+                            <li><span>ROC-AUC:</span> <strong>0.982</strong></li>
+                            <li><span>Inference:</span> <strong>Client-Side (18ms)</strong></li>
+                            <li><span>Non-linear interactions captured</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="benchmark-card">
+                        <div class="benchmark-badge generic">Comparison Model</div>
+                        <h3>Random Forest Classifier</h3>
+                        <div class="bench-metric">
+                            <span class="bench-num">91.4%</span>
+                            <span class="bench-label">Accuracy</span>
+                        </div>
+                        <ul class="bench-details">
+                            <li><span>F1-Score:</span> <strong>0.908</strong></li>
+                            <li><span>ROC-AUC:</span> <strong>0.931</strong></li>
+                            <li><span>Inference:</span> <strong>Server Batch (140ms)</strong></li>
+                            <li><span>Ensemble bagging trees</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="benchmark-card">
+                        <div class="benchmark-badge generic">Comparison Model</div>
+                        <h3>Support Vector Machine (SVM)</h3>
+                        <div class="bench-metric">
+                            <span class="bench-num">89.2%</span>
+                            <span class="bench-label">Accuracy</span>
+                        </div>
+                        <ul class="bench-details">
+                            <li><span>F1-Score:</span> <strong>0.884</strong></li>
+                            <li><span>ROC-AUC:</span> <strong>0.912</strong></li>
+                            <li><span>Inference:</span> <strong>RBF Kernel (95ms)</strong></li>
+                            <li><span>High dimensional boundary</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="benchmark-card">
+                        <div class="benchmark-badge generic">Baseline Model</div>
+                        <h3>Logistic Regression</h3>
+                        <div class="bench-metric">
+                            <span class="bench-num">82.5%</span>
+                            <span class="bench-label">Accuracy</span>
+                        </div>
+                        <ul class="bench-details">
+                            <li><span>F1-Score:</span> <strong>0.819</strong></li>
+                            <li><span>ROC-AUC:</span> <strong>0.864</strong></li>
+                            <li><span>Inference:</span> <strong>Linear (12ms)</strong></li>
+                            <li><span>Underfits correlated stress factors</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="page-footer">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <span class="footer-title">ADMRI &bull; Adaptive Digital Mental Risk Index</span>
+                <p>Designed and built by <strong>A Geethika</strong> &bull; B.Tech Computer Science (Cloud Computing), SRM University of Science and Technology.</p>
+            </div>
+            <div class="footer-right">
+                <a href="../../index.html#projects" class="footer-link">Back to Portfolio</a>
+                <a href="https://www.linkedin.com/in/geethika-a-8339181ba" target="_blank" rel="noopener" class="footer-link"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                <a href="mailto:reddyageethika@gmail.com" class="footer-link"><i class="fa-solid fa-envelope"></i> Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

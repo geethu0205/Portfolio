@@ -31,10 +31,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // 3. Automated Subtitle Typing Effect
     const typingText = document.getElementById('typingText');
     const roles = [
+        "Data Analyst & BI Developer",
         "Cloud Computing Specialist",
-        "Machine Learning Developer",
-        "Data Pipeline Architect",
-        "Problem Solver"
+        "Machine Learning Engineer",
+        "Big Data & Python Developer"
     ];
     let roleIndex = 0;
     let charIndex = 0;

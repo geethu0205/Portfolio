@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Food Flow | AI-Driven Predictive Inventory Management</title>
+    <meta name="description" content="Smart Food Flow by A Geethika. An AI-based predictive inventory system using Python, Hadoop, Apache Spark, SQL, and XGBoost to reduce food waste by 45% with 99% accuracy.">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top Global Bar -->
+    <header class="top-nav">
+        <div class="nav-container">
+            <div class="brand-group">
+                <a href="../../index.html#projects" class="back-link" title="Return to Geethika's Portfolio">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <span>Portfolio</span>
+                </a>
+                <div class="brand-divider"></div>
+                <div class="brand-logo">
+                    <span class="logo-icon"><i class="fa-solid fa-leaf"></i></span>
+                    <div>
+                        <span class="logo-title">Smart Food Flow</span>
+                        <span class="logo-sub">Big Data & AI Inventory System</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-cluster-status">
+                <span class="cluster-badge"><span class="pulse-dot green"></span> Spark Core: Active</span>
+                <span class="cluster-badge"><span class="pulse-dot blue"></span> HDFS: 1.4M Nodes</span>
+                <span class="cluster-badge"><span class="pulse-dot emerald"></span> XGBoost: 99.1% Acc</span>
+            </div>
+
+            <div class="nav-actions">
+                <a href="https://ieeexplore.ieee.org/document/11479138/metrics#metrics" target="_blank" rel="noopener" class="ieee-btn">
+                    <i class="fa-solid fa-book-bookmark"></i>
+                    <span>IEEE Publication</span>
+                </a>
+                <a href="#simulator" class="btn-demo">
+                    <i class="fa-solid fa-sliders"></i>
+                    <span>Launch Simulator</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="page-body">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-glow"></div>
+            <div class="container">
+                <div class="hero-header">
+                    <div class="hero-badge">
+                        <i class="fa-solid fa-award"></i>
+                        <span>Published in IEEE ICSES 2026 &bull; Author: A Geethika</span>
+                    </div>
+                    <h1>Predictive Food Inventory & Waste Mitigation Engine</h1>
+                    <p class="hero-summary">
+                        Smart Food Flow leverages <strong>Hadoop</strong> distributed storage, <strong>Apache Spark</strong> in-memory streaming, and fine-tuned <strong>XGBoost ML</strong> to forecast dining demand, optimize reorder thresholds, and eliminate food spoilage in real time.
+                    </p>
+                    <div class="hero-tech-stack">
+                        <span class="tech-tag"><i class="fa-brands fa-python"></i> Python</span>
+                        <span class="tech-tag"><i class="fa-solid fa-database"></i> Apache Spark</span>
+                        <span class="tech-tag"><i class="fa-solid fa-server"></i> Hadoop HDFS</span>
+                        <span class="tech-tag"><i class="fa-solid fa-table"></i> SQL (MySQL)</span>
+                        <span class="tech-tag"><i class="fa-solid fa-chart-line"></i> XGBoost Regressor</span>
+                    </div>
+                </div>
+
+                <!-- Live Metrics Grid -->
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-icon green"><i class="fa-solid fa-bullseye"></i></div>
+                        <div class="metric-data">
+                            <span class="metric-num">99.1%</span>
+                            <span class="metric-lbl">Model Prediction Accuracy</span>
+                        </div>
+                        <span class="metric-note">Evaluated on 45,000+ dining logs</span>
+                    </div>
+
+                    <div class="metric-card">
+                        <div class="metric-icon emerald"><i class="fa-solid fa-arrow-trend-down"></i></div>
+                        <div class="metric-data">
+                            <span class="metric-num">45.0%</span>
+                            <span class="metric-lbl">Food Waste Reduction</span>
+                        </div>
+                        <span class="metric-note">Measured across dynamic testing</span>
+                    </div>
+
+                    <div class="metric-card">
+                        <div class="metric-icon blue"><i class="fa-solid fa-bolt"></i></div>
+                        <div class="metric-data">
+                            <span class="metric-num">&lt; 42ms</span>
+                            <span class="metric-lbl">Spark Inference Latency</span>
+                        </div>
+                        <span class="metric-note">Distributed batch & micro-stream</span>
+                    </div>
+
+                    <div class="metric-card">
+                        <div class="metric-icon amber"><i class="fa-solid fa-sack-dollar"></i></div>
+                        <div class="metric-data">
+                            <span class="metric-num">$42,800+</span>
+                            <span class="metric-lbl">Calculated Resource Savings</span>
+                        </div>
+                        <span class="metric-note">Projected annual institutional savings</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Simulator Section -->
+        <section id="simulator" class="section-container">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <span class="sub-label">Real-Time Model Execution</span>
+                    <h2>Interactive XGBoost Demand & Spoilage Simulator</h2>
+                    <p>Adjust environmental and institutional parameters below to test the trained model’s real-time inference, demand prediction, and automated waste prevention recommendations.</p>
+                </div>
+
+                <div class="simulator-layout">
+                    <!-- Control Panel Form -->
+                    <div class="simulator-card control-panel">
+                        <div class="panel-header">
+                            <h3><i class="fa-solid fa-sliders"></i> Input Parameters</h3>
+                            <button id="resetSimBtn" class="btn-text" type="button"><i class="fa-solid fa-rotate-left"></i> Reset Defaults</button>
+                        </div>
+
+                        <div class="form-body">
+                            <!-- Preset Scenario Quick Buttons -->
+                            <div class="form-group">
+                                <label class="input-label">Quick Scenarios</label>
+                                <div class="scenario-buttons">
+                                    <button class="scenario-btn active" data-scenario="weekday">Normal Weekday</button>
+                                    <button class="scenario-btn" data-scenario="weekend">Weekend Rush</button>
+                                    <button class="scenario-btn" data-scenario="holiday">Campus Fest / Holiday</button>
+                                    <button class="scenario-btn" data-scenario="rain">Heavy Rain Drop</button>
+                                </div>
+                            </div>
+
+                            <!-- Food Item Selection -->
+                            <div class="form-group">
+                                <label for="foodCategory" class="input-label">Food Category & Item</label>
+                                <select id="foodCategory" class="form-select">
+                                    <option value="produce" data-name="Organic Leafy Greens & Salad" data-shelf="2" data-base="180" data-unit="kg" selected>Organic Leafy Greens (Produce &bull; 2-day shelf life)</option>
+                                    <option value="dairy" data-name="Farm Fresh Whole Milk" data-shelf="4" data-base="320" data-unit="L">Farm Fresh Whole Milk (Dairy &bull; 4-day shelf life)</option>
+                                    <option value="bakery" data-name="Artisan Brioche & Breads" data-shelf="2" data-base="210" data-unit="loaves">Artisan Brioche & Breads (Bakery &bull; 2-day shelf life)</option>
+                                    <option value="seafood" data-name="Atlantic Salmon Portions" data-shelf="3" data-base="140" data-unit="kg">Atlantic Salmon Portions (Meat/Seafood &bull; 3-day shelf life)</option>
+                                    <option value="meals" data-name="Chef Special Meal Boxes" data-shelf="1" data-base="450" data-unit="boxes">Chef Special Meal Boxes (Prepared &bull; 1-day shelf life)</option>
+                                </select>
+                            </div>
+
+                            <!-- Current Stock Slider -->
+                            <div class="form-group">
+                                <div class="slider-header">
+                                    <label for="currentStock" class="input-label">Current Stock on Hand</label>
+                                    <span class="slider-val" id="stockDisplay">240 units</span>
+                                </div>
+                                <input type="range" id="currentStock" min="20" max="600" step="10" value="240" class="slider">
+                                <div class="slider-bounds"><span>20</span><span>300</span><span>600</span></div>
+                            </div>
+
+                            <!-- Expected Footfall Slider -->
+                            <div class="form-group">
+                                <div class="slider-header">
+                                    <label for="footfall" class="input-label">Projected Diners / Footfall</label>
+                                    <span class="slider-val" id="footfallDisplay">650 people</span>
+                                </div>
+                                <input type="range" id="footfall" min="100" max="1500" step="25" value="650" class="slider">
+                                <div class="slider-bounds"><span>100</span><span>800</span><span>1,500</span></div>
+                            </div>
+
+                            <!-- Shelf Life Left -->
+                            <div class="form-group">
+                                <div class="slider-header">
+                                    <label for="shelfLife" class="input-label">Shelf Life Remaining (Days)</label>
+                                    <span class="slider-val" id="shelfLifeDisplay">2 days</span>
+                                </div>
+                                <input type="range" id="shelfLife" min="1" max="7" step="1" value="2" class="slider">
+                                <div class="slider-bounds"><span>1 day</span><span>4 days</span><span>7 days</span></div>
+                            </div>
+
+                            <!-- Weather Condition -->
+                            <div class="form-group">
+                                <label class="input-label">Ambient Weather Condition</label>
+                                <div class="radio-pill-group">
+                                    <label class="radio-pill">
+                                        <input type="radio" name="weather" value="clear" checked>
+                                        <span><i class="fa-solid fa-sun"></i> Sunny / Moderate</span>
+                                    </label>
+                                    <label class="radio-pill">
+                                        <input type="radio" name="weather" value="hot">
+                                        <span><i class="fa-solid fa-temperature-high"></i> High Heat (36°C+)</span>
+                                    </label>
+                                    <label class="radio-pill">
+                                        <input type="radio" name="weather" value="rain">
+                                        <span><i class="fa-solid fa-cloud-showers-heavy"></i> Heavy Rain</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Inference Results Output -->
+                    <div class="simulator-card results-panel">
+                        <div class="panel-header">
+                            <h3><i class="fa-solid fa-microchip"></i> XGBoost Output Telemetry</h3>
+                            <span class="model-tag"><i class="fa-solid fa-check"></i> 99.1% Confidence</span>
+                        </div>
+
+                        <div class="results-body">
+                            <!-- Main Metric Highlight -->
+                            <div class="prediction-banner">
+                                <div class="pred-item">
+                                    <span class="pred-label">Predicted Demand</span>
+                                    <div class="pred-value-wrap">
+                                        <span class="pred-val" id="predDemand">238</span>
+                                        <span class="pred-unit" id="predUnit">units</span>
+                                    </div>
+                                    <span class="pred-delta" id="stockDiff">+2 Surplus</span>
+                                </div>
+                                <div class="pred-divider"></div>
+                                <div class="pred-item">
+                                    <span class="pred-label">Spoilage Probability</span>
+                                    <div class="pred-value-wrap">
+                                        <span class="pred-val" id="spoilageProb">12.4%</span>
+                                    </div>
+                                    <span class="pred-status low" id="spoilageBadge"><i class="fa-solid fa-shield"></i> Low Risk</span>
+                                </div>
+                            </div>
+
+                            <!-- Gauge Progress Bar -->
+                            <div class="decay-gauge-wrap">
+                                <div class="gauge-header">
+                                    <span>Stock Decay Index</span>
+                                    <span id="decayLabel">Low Spoilage Likelihood</span>
+                                </div>
+                                <div class="gauge-track">
+                                    <div class="gauge-fill" id="gaugeBar" style="width: 12.4%;"></div>
+                                </div>
+                            </div>
+
+                            <!-- Dynamic Decision Engine Box -->
+                            <div class="decision-box" id="decisionBox">
+                                <div class="decision-icon" id="decisionIcon">
+                                    <i class="fa-solid fa-check-double"></i>
+                                </div>
+                                <div class="decision-content">
+                                    <h4 id="decisionTitle">Stock Balanced: Optimal Equilibrium</h4>
+                                    <p id="decisionDesc">Current stock aligns with XGBoost forecasted demand within &plusmn;5%. No urgent purchase requisition or clearance markdown needed.</p>
+                                    <div class="decision-action-btn" id="actionBtnWrap">
+                                        <span class="action-tag"><i class="fa-solid fa-server"></i> Logged to Spark Stream</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Savings Impact Breakdown -->
+                            <div class="savings-summary">
+                                <div class="saving-chip">
+                                    <span class="chip-val" id="foodSavedKg">42.5 kg</span>
+                                    <span class="chip-lbl">Food Waste Avoided</span>
+                                </div>
+                                <div class="saving-chip">
+                                    <span class="chip-val" id="co2Offset">85.0 kg</span>
+                                    <span class="chip-lbl">CO₂ Emissions Cut</span>
+                                </div>
+                                <div class="saving-chip">
+                                    <span class="chip-val" id="costPreserved">$340.00</span>
+                                    <span class="chip-lbl">Value Saved</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Live Real-Time Inventory Table -->
+        <section class="section-container alt-bg">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <span class="sub-label">HDFS Data Synchronizer</span>
+                    <h2>Campus Dining Live Inventory Stream</h2>
+                    <p>Real-time inventory table synchronized with simulated Apache Spark worker nodes and MySQL persistence tier.</p>
+                </div>
+
+                <div class="table-card">
+                    <div class="table-toolbar">
+                        <div class="table-search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" id="inventorySearch" placeholder="Filter items by name or category...">
+                        </div>
+                        <div class="table-filters">
+                            <button class="tbl-filter-btn active" data-filter="all">All Items</button>
+                            <button class="tbl-filter-btn" data-filter="Produce">Produce</button>
+                            <button class="tbl-filter-btn" data-filter="Dairy">Dairy</button>
+                            <button class="tbl-filter-btn" data-filter="Bakery">Bakery</button>
+                            <button class="tbl-filter-btn" data-filter="Meals">Meals</button>
+                        </div>
+                        <button class="btn-refresh" id="refreshTableBtn">
+                            <i class="fa-solid fa-arrows-rotate"></i>
+                            <span>Trigger Spark Batch</span>
+                        </button>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="inventory-table">
+                            <thead>
+                                <tr>
+                                    <th>Item Code</th>
+                                    <th>Product Name</th>
+                                    <th>Category</th>
+                                    <th>In Stock</th>
+                                    <th>Forecasted (24h)</th>
+                                    <th>Expiry Horizon</th>
+                                    <th>Decay Risk</th>
+                                    <th>Action Recommendation</th>
+                                </tr>
+                            </thead>
+                            <tbody id="inventoryTableBody">
+                                <!-- Dynamic rows rendered by app.js -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Big Data Architecture Explorer -->
+        <section class="section-container">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <span class="sub-label">System Architecture</span>
+                    <h2>End-to-End Big Data & ML Pipeline</h2>
+                    <p>Explore how raw telemetry flows from institutional supply logs through Hadoop, Apache Spark, and XGBoost into actionable inventory decisions.</p>
+                </div>
+
+                <div class="pipeline-flow">
+                    <div class="pipeline-step active" data-step="1">
+                        <div class="step-num">01</div>
+                        <div class="step-icon"><i class="fa-solid fa-satellite-dish"></i></div>
+                        <h4>Data Ingestion</h4>
+                        <p>IoT sensors, POS transactions, institutional dining logs & weather feeds.</p>
+                    </div>
+                    <div class="pipeline-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+
+                    <div class="pipeline-step" data-step="2">
+                        <div class="step-num">02</div>
+                        <div class="step-icon"><i class="fa-solid fa-database"></i></div>
+                        <h4>Hadoop HDFS</h4>
+                        <p>Distributed fault-tolerant storage holding historical batch records.</p>
+                    </div>
+                    <div class="pipeline-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+
+                    <div class="pipeline-step" data-step="3">
+                        <div class="step-num">03</div>
+                        <div class="step-icon"><i class="fa-solid fa-bolt"></i></div>
+                        <h4>Apache Spark</h4>
+                        <p>In-memory feature extraction, moving averages, and decay lag calculations.</p>
+                    </div>
+                    <div class="pipeline-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+
+                    <div class="pipeline-step" data-step="4">
+                        <div class="step-num">04</div>
+                        <div class="step-icon"><i class="fa-solid fa-brain"></i></div>
+                        <h4>XGBoost ML</h4>
+                        <p>Gradient-boosted decision trees predicting demand with 99.1% accuracy.</p>
+                    </div>
+                    <div class="pipeline-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+
+                    <div class="pipeline-step" data-step="5">
+                        <div class="step-num">05</div>
+                        <div class="step-icon"><i class="fa-solid fa-chart-pie"></i></div>
+                        <h4>Action Dispatch</h4>
+                        <p>Automated reorder triggers, flash markdown notifications, and waste audits.</p>
+                    </div>
+                </div>
+
+                <!-- Pipeline Inspector Detail Box -->
+                <div class="pipeline-detail-card" id="pipelineDetail">
+                    <div class="detail-header">
+                        <div class="detail-tag-wrap">
+                            <span class="detail-badge" id="stepBadge">STAGE 01</span>
+                            <h3 id="stepTitle">IoT & Dining Telemetry Ingestion Layer</h3>
+                        </div>
+                        <span class="detail-metric" id="stepMetric">Throughput: 14,200 events/sec</span>
+                    </div>
+                    <p id="stepDescription">Captures real-time stock deductions directly from campus dining RFID points of sale, temperature chillers, and daily academic calendar feeds.</p>
+                    <div class="code-terminal">
+                        <div class="terminal-bar">
+                            <span class="term-dot red"></span>
+                            <span class="term-dot yellow"></span>
+                            <span class="term-dot green"></span>
+                            <span class="term-title" id="termFile">telemetry_consumer.py</span>
+                        </div>
+                        <pre class="terminal-code"><code id="termCode"># Kafka stream consumer piping sensor metrics into HDFS
+from pyspark.sql import SparkSession
+spark = SparkSession.builder.appName("FoodFlowIngestion").getOrCreate()
+raw_stream = spark.readStream.format("kafka").option("subscribe", "dining-inventory").load()</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- IEEE Publication & Research Spotlight -->
+        <section class="section-container alt-bg">
+            <div class="container">
+                <div class="ieee-feature-card">
+                    <div class="ieee-badge-icon">
+                        <i class="fa-solid fa-file-shield"></i>
+                    </div>
+                    <div class="ieee-content">
+                        <span class="ieee-label"><i class="fa-solid fa-certificate"></i> Peer-Reviewed Research Publication &bull; IEEE ICSES 2026</span>
+                        <h3>Intelligent Food Inventory Management System</h3>
+                        <p class="ieee-authors"><strong>Author:</strong> A Geethika | Published in IEEE Xplore, Jan 2026</p>
+                        <p class="ieee-abstract">
+                            "This paper introduces an autonomous food waste mitigation paradigm combining distributed data pipelines with gradient boosted decision trees. By integrating historical dining logs with environmental decay factors, the system achieved 99% demand prediction accuracy and demonstrated a 45% measurable reduction in institutional food discard."
+                        </p>
+                        <div class="ieee-card-actions">
+                            <a href="https://ieeexplore.ieee.org/document/11479138/metrics#metrics" target="_blank" rel="noopener" class="btn-ieee-primary">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Read Publication on IEEE Xplore
+                            </a>
+                            <a href="../../index.html" class="btn-portfolio-back">
+                                <i class="fa-solid fa-user"></i> View Geethika's Full Portfolio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="page-footer">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <span class="footer-title">Smart Food Flow</span>
+                <p>Designed and engineered by <strong>A Geethika</strong> &bull; B.Tech CSE (Cloud Computing) at SRM University of Science and Technology.</p>
+            </div>
+            <div class="footer-right">
+                <a href="../../index.html#projects" class="footer-link">Back to Portfolio</a>
+                <a href="https://www.linkedin.com/in/geethika-a-8339181ba" target="_blank" rel="noopener" class="footer-link"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                <a href="mailto:reddyageethika@gmail.com" class="footer-link"><i class="fa-solid fa-envelope"></i> Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

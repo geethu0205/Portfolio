@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IntelliAC | Smart Classroom AC Power Automation & Energy Optimization</title>
+    <meta name="description" content="IntelliAC by A Geethika. A smart AC power management system built in Java to monitor and optimize classroom air-conditioning usage based on occupancy, reducing utility energy consumption and operational costs.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top Global Bar -->
+    <header class="top-nav">
+        <div class="nav-container">
+            <div class="brand-group">
+                <a href="../../index.html#projects" class="back-link" title="Return to Geethika's Portfolio">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <span>Portfolio</span>
+                </a>
+                <div class="brand-divider"></div>
+                <div class="brand-logo">
+                    <span class="logo-icon"><i class="fa-solid fa-snowflake"></i></span>
+                    <div>
+                        <span class="logo-title">IntelliAC</span>
+                        <span class="logo-sub">Smart Classroom Power Management</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-system-status">
+                <span class="status-badge"><span class="pulse-dot cyan"></span> Java Daemon: Online</span>
+                <span class="status-badge"><span class="pulse-dot green"></span> 32 Classrooms Synced</span>
+                <span class="status-badge"><span class="pulse-dot blue"></span> 38.5% Energy Saved</span>
+            </div>
+
+            <div class="nav-actions">
+                <a href="#control-console" class="btn-primary-action">
+                    <i class="fa-solid fa-sliders"></i>
+                    <span>Live Console</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="page-body">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-glow-cyan"></div>
+            <div class="container">
+                <div class="hero-header">
+                    <div class="hero-badge">
+                        <i class="fa-solid fa-microchip"></i>
+                        <span>Smart Campus Energy Automation &bull; Author: A Geethika</span>
+                    </div>
+                    <h1>Smart Classroom AC Power Automation</h1>
+                    <p class="hero-summary">
+                        IntelliAC is an automated energy management platform architected in <strong>Java</strong> to monitor and regulate institutional air-conditioning systems. By dynamically modulating cooling cycles against real-time classroom occupancy and ambient environmental factors, IntelliAC curtails wasteful power consumption while preserving optimal learning comfort.
+                    </p>
+                    <div class="hero-tech-stack">
+                        <span class="tech-tag"><i class="fa-brands fa-java"></i> Java (OOP Architecture)</span>
+                        <span class="tech-tag"><i class="fa-solid fa-microchip"></i> Smart Sensor Simulation</span>
+                        <span class="tech-tag"><i class="fa-solid fa-bolt"></i> Power Grid Management</span>
+                        <span class="tech-tag"><i class="fa-solid fa-gears"></i> Automated Control Logic</span>
+                        <span class="tech-tag"><i class="fa-solid fa-clock"></i> SRM Timetable Sync</span>
+                    </div>
+                </div>
+
+                <!-- KPI Metric Grid -->
+                <div class="kpi-grid">
+                    <div class="kpi-card">
+                        <div class="kpi-icon green"><i class="fa-solid fa-bolt"></i></div>
+                        <div class="kpi-data">
+                            <span class="kpi-num">38.5%</span>
+                            <span class="kpi-lbl">Total Power Cut</span>
+                        </div>
+                        <span class="kpi-sub">Reduced unnecessary classroom idling</span>
+                    </div>
+
+                    <div class="kpi-card">
+                        <div class="kpi-icon cyan"><i class="fa-solid fa-temperature-arrow-down"></i></div>
+                        <div class="kpi-data">
+                            <span class="kpi-num">18,450 kWh</span>
+                            <span class="kpi-lbl">Cumulative Energy Saved</span>
+                        </div>
+                        <span class="kpi-sub">Campus pilot trial evaluation</span>
+                    </div>
+
+                    <div class="kpi-card">
+                        <div class="kpi-icon amber"><i class="fa-solid fa-indian-rupee-sign"></i></div>
+                        <div class="kpi-data">
+                            <span class="kpi-num">&#8377;1,84,000+</span>
+                            <span class="kpi-lbl">Utility Cost Reduction</span>
+                        </div>
+                        <span class="kpi-sub">Semester operating expenditure saved</span>
+                    </div>
+
+                    <div class="kpi-card">
+                        <div class="kpi-icon teal"><i class="fa-solid fa-leaf"></i></div>
+                        <div class="kpi-data">
+                            <span class="kpi-num">14.7 Tons</span>
+                            <span class="kpi-lbl">Carbon Emissions Prevented</span>
+                        </div>
+                        <span class="kpi-sub">Sustainable institutional footprint</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Live Control Console Section -->
+        <section id="control-console" class="section-container">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <span class="sub-label">Campus IoT Dispatch Center</span>
+                    <h2>Interactive Classroom AC Control Console</h2>
+                    <p>Select a campus facility, adjust student occupancy, and observe how the automated Java controller regulates compressor frequencies, power consumption, and thermal comfort in real time.</p>
+                </div>
+
+                <!-- Classroom Facility Selector Bar -->
+                <div class="room-selector-bar">
+                    <span class="selector-lbl"><i class="fa-solid fa-building-columns"></i> Select Classroom:</span>
+                    <button class="room-tab active" data-room="101" data-name="Lecture Hall 101" data-cap="80" data-units="4">
+                        <i class="fa-solid fa-chalkboard-user"></i> Hall 101 (Lecture &bull; Cap: 80)
+                    </button>
+                    <button class="room-tab" data-room="204" data-name="Cloud Computing Lab 204" data-cap="50" data-units="6">
+                        <i class="fa-solid fa-desktop"></i> Lab 204 (Cloud Lab &bull; Cap: 50)
+                    </button>
+                    <button class="room-tab" data-room="302" data-name="Seminar Hall 302" data-cap="120" data-units="8">
+                        <i class="fa-solid fa-users"></i> Seminar 302 (Auditorium &bull; Cap: 120)
+                    </button>
+                </div>
+
+                <div class="console-grid">
+                    <!-- Left Column: Controls & Environment Simulation -->
+                    <div class="console-card controls-panel">
+                        <div class="panel-header">
+                            <div>
+                                <h3 id="activeRoomTitle">Lecture Hall 101</h3>
+                                <span class="room-meta" id="activeRoomMeta">Capacity: 80 students &bull; 4 AC Units Installed</span>
+                            </div>
+                            <button id="resetRoomBtn" class="btn-text"><i class="fa-solid fa-rotate-left"></i> Reset Defaults</button>
+                        </div>
+
+                        <div class="panel-body">
+                            <!-- Automation Mode Toggle -->
+                            <div class="mode-toggle-card">
+                                <div class="mode-info">
+                                    <span class="mode-title"><i class="fa-solid fa-wand-magic-sparkles"></i> Smart Presence Automation</span>
+                                    <p class="mode-desc">Java daemon continuously modulates compressor load based on IR headcount & ambient heat.</p>
+                                </div>
+                                <label class="switch">
+                                    <input type="checkbox" id="autoModeToggle" checked>
+                                    <span class="switch-slider"></span>
+                                </label>
+                            </div>
+
+                            <!-- Occupancy Headcount Slider -->
+                            <div class="form-group">
+                                <div class="slider-header">
+                                    <label class="input-label"><i class="fa-solid fa-person"></i> Current Student Occupancy</label>
+                                    <span class="slider-val" id="occupancyVal">45 Students</span>
+                                </div>
+                                <input type="range" id="occupancySlider" min="0" max="80" value="45" class="slider-cyan">
+                                <div class="slider-bounds">
+                                    <span>Empty (0)</span>
+                                    <span>Mid (40)</span>
+                                    <span>Full Capacity (80)</span>
+                                </div>
+                                <div class="quick-occupancy-pills">
+                                    <button class="occ-pill" data-val="0">Empty Class</button>
+                                    <button class="occ-pill" data-val="25">Quarter Full</button>
+                                    <button class="occ-pill" data-val="50">Half Full</button>
+                                    <button class="occ-pill" data-val="80">Full Class</button>
+                                </div>
+                            </div>
+
+                            <!-- Outside Ambient Temperature Slider -->
+                            <div class="form-group">
+                                <div class="slider-header">
+                                    <label class="input-label"><i class="fa-solid fa-sun"></i> Ambient Outside Temperature (Chennai)</label>
+                                    <span class="slider-val" id="outsideTempVal">34 °C</span>
+                                </div>
+                                <input type="range" id="outsideTempSlider" min="24" max="42" value="34" class="slider-cyan">
+                                <div class="slider-bounds">
+                                    <span>Cool (24°C)</span>
+                                    <span>Moderate (32°C)</span>
+                                    <span>Heatwave (42°C)</span>
+                                </div>
+                            </div>
+
+                            <!-- Target Comfort Setpoint -->
+                            <div class="form-group">
+                                <div class="slider-header">
+                                    <label class="input-label"><i class="fa-solid fa-temperature-half"></i> Desired Comfort Setpoint</label>
+                                    <span class="slider-val" id="setpointVal">23.0 °C</span>
+                                </div>
+                                <input type="range" id="setpointSlider" min="18" max="28" value="23" step="0.5" class="slider-cyan">
+                                <div class="slider-bounds">
+                                    <span>Max Cold (18°C)</span>
+                                    <span>Comfort (23°C)</span>
+                                    <span>Eco Max (28°C)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Real-Time Telemetry & Energy Meters -->
+                    <div class="console-card telemetry-panel">
+                        <div class="panel-header">
+                            <h3><i class="fa-solid fa-chart-line"></i> Real-Time AC Telemetry</h3>
+                            <span class="status-indicator-chip" id="acStatusChip">
+                                <span class="pulse-dot green"></span> Running &bull; Dynamic Cooling
+                            </span>
+                        </div>
+
+                        <div class="panel-body">
+                            <!-- Visual Telemetry Cards -->
+                            <div class="telemetry-grid">
+                                <div class="telem-box">
+                                    <span class="telem-label">Room Temperature</span>
+                                    <div class="telem-val-wrap">
+                                        <span class="telem-num" id="currentRoomTemp">23.2</span>
+                                        <span class="telem-unit">°C</span>
+                                    </div>
+                                    <span class="telem-note" id="tempDeltaNote">&plusmn;0.2°C to Setpoint</span>
+                                </div>
+
+                                <div class="telem-box">
+                                    <span class="telem-label">Active Power Draw</span>
+                                    <div class="telem-val-wrap">
+                                        <span class="telem-num" id="currentPowerDraw">3.4</span>
+                                        <span class="telem-unit">kW</span>
+                                    </div>
+                                    <span class="telem-note savings" id="powerSavingNote">42% vs Uncontrolled</span>
+                                </div>
+
+                                <div class="telem-box">
+                                    <span class="telem-label">Compressor Load</span>
+                                    <div class="telem-val-wrap">
+                                        <span class="telem-num" id="compressorLoad">68</span>
+                                        <span class="telem-unit">%</span>
+                                    </div>
+                                    <span class="telem-note" id="compressorStatus">Inverter Variable Freq</span>
+                                </div>
+
+                                <div class="telem-box">
+                                    <span class="telem-label">Current AC State</span>
+                                    <div class="telem-val-wrap">
+                                        <span class="telem-state" id="acModeDisplay">COOLING</span>
+                                    </div>
+                                    <span class="telem-note" id="unitsActiveNote">4/4 Units Operating</span>
+                                </div>
+                            </div>
+
+                            <!-- Compressor Gauge Bar -->
+                            <div class="gauge-container">
+                                <div class="gauge-lbl-wrap">
+                                    <span>Compressor Inverter Modulation</span>
+                                    <span id="inverterSpeed">68% Capacity (38 Hz)</span>
+                                </div>
+                                <div class="gauge-track">
+                                    <div class="gauge-bar" id="compressorGaugeBar" style="width: 68%;"></div>
+                                </div>
+                            </div>
+
+                            <!-- Live Decision Advisory -->
+                            <div class="advisory-box" id="advisoryBox">
+                                <div class="advisory-icon" id="advisoryIcon">
+                                    <i class="fa-solid fa-microchip"></i>
+                                </div>
+                                <div class="advisory-content">
+                                    <h4 id="advisoryTitle">Optimal Cooling Equilibrium</h4>
+                                    <p id="advisoryDesc">45 occupants detected. Controller has throttled AC units to 68% inverter frequency to maintain 23°C comfort while preventing grid overload.</p>
+                                </div>
+                            </div>
+
+                            <!-- Java Daemon Log Stream Terminal -->
+                            <div class="terminal-container">
+                                <div class="terminal-header">
+                                    <span class="term-title"><i class="fa-solid fa-terminal"></i> Java OOP Daemon Execution Log</span>
+                                    <span class="term-badge">ClassroomController.class</span>
+                                </div>
+                                <div class="terminal-body" id="terminalLog">
+                                    <div class="term-line"><span class="term-time">[14:20:00]</span> [INFO] ClassroomController initialized for Hall 101.</div>
+                                    <div class="term-line"><span class="term-time">[14:20:05]</span> [PRESENCE] OccupancySensor detected 45 students.</div>
+                                    <div class="term-line"><span class="term-time">[14:20:06]</span> [OPTIMIZER] ThermalLoadOptimizer computed target frequency: 68%.</div>
+                                    <div class="term-line"><span class="term-time">[14:20:07]</span> [ENERGY] Active power modulated to 3.4 kW (Energy saved: 42%).</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Java OOP Architecture Section -->
+        <section class="section-container alt-bg">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <span class="sub-label">Object-Oriented Software Engineering</span>
+                    <h2>Java OOP Architecture & Core Modules</h2>
+                    <p>IntelliAC is designed with clean modularity, separation of concerns, and robust object-oriented patterns in Java.</p>
+                </div>
+
+                <div class="modules-grid">
+                    <div class="module-card">
+                        <div class="mod-icon"><i class="fa-solid fa-network-wired"></i></div>
+                        <h3>ClassroomController.java</h3>
+                        <p class="mod-desc">The central controller orchestrating sensor polling cycles, timetable schedules, and dispatching actuation commands to AC hardware.</p>
+                        <div class="code-snippet">
+                            <code>public void evaluateClimate(Classroom c) {<br>&nbsp;&nbsp;int count = c.getOccupancy();<br>&nbsp;&nbsp;if (count == 0) enterStandby(c);<br>&nbsp;&nbsp;else modulateLoad(c, count);<br>}</code>
+                        </div>
+                    </div>
+
+                    <div class="module-card">
+                        <div class="mod-icon"><i class="fa-solid fa-person-shelter"></i></div>
+                        <h3>OccupancySensor.java</h3>
+                        <p class="mod-desc">Interfaces with PIR and overhead vision counters, filtering noise and verifying consistent vacancy thresholds before triggering idle sleep.</p>
+                        <div class="code-snippet">
+                            <code>public boolean isVacantForThreshold(int minutes) {<br>&nbsp;&nbsp;return getLastPresenceDuration() &gt; minutes;<br>}</code>
+                        </div>
+                    </div>
+
+                    <div class="module-card">
+                        <div class="mod-icon"><i class="fa-solid fa-temperature-low"></i></div>
+                        <h3>ThermalOptimizer.java</h3>
+                        <p class="mod-desc">Applies thermodynamic heat load calculations: combines ambient Chennai temperatures, glass insulation coefficients, and human metabolic thermal wattage.</p>
+                        <div class="code-snippet">
+                            <code>double heatWatts = (headcount * 100.0) + <br>&nbsp;&nbsp;((outsideTemp - setpoint) * heatLossFactor);</code>
+                        </div>
+                    </div>
+
+                    <div class="module-card">
+                        <div class="mod-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+                        <h3>EnergyAuditLogger.java</h3>
+                        <p class="mod-desc">Maintains high-precision telemetry logs, computing exact kilowatt-hours saved, avoided peak electricity tariffs, and emissions offset.</p>
+                        <div class="code-snippet">
+                            <code>public double calculateTotalSavings() {<br>&nbsp;&nbsp;return (baselineKwh - actualKwh) * TARIFF_RATE;<br>}</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timetable Automation Section -->
+        <section class="section-container">
+            <div class="container">
+                <div class="schedule-banner">
+                    <div class="schedule-icon">
+                        <i class="fa-solid fa-calendar-check"></i>
+                    </div>
+                    <div class="schedule-content">
+                        <span class="sched-tag">SRM IST Academic Timetable Sync</span>
+                        <h3>Intelligent Pre-Cooling & Auto-Dismissal Scheduler</h3>
+                        <p>IntelliAC syncs directly with the university course schedule. Classrooms undergo automated pre-cooling 10 minutes prior to lecture commencement, and transition into zero-watt deep sleep 5 minutes after class conclusion if no student presence is detected.</p>
+                        <div class="sched-pills">
+                            <span class="sched-pill"><i class="fa-solid fa-clock"></i> 10-Min Pre-Cool Buffer</span>
+                            <span class="sched-pill"><i class="fa-solid fa-power-off"></i> 5-Min Idle Auto Shutdown</span>
+                            <span class="sched-pill"><i class="fa-solid fa-shield"></i> Manual Faculty Override</span>
+                        </div>
+                    </div>
+                    <div class="schedule-action">
+                        <a href="../../index.html" class="btn-portfolio-main">
+                            <i class="fa-solid fa-arrow-left"></i>
+                            <span>Return to Portfolio</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="page-footer">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <span class="footer-title">IntelliAC &bull; Smart Classroom AC Automation</span>
+                <p>Designed and programmed in Java by <strong>A Geethika</strong> &bull; B.Tech CSE (Cloud Computing) at SRM University of Science and Technology.</p>
+            </div>
+            <div class="footer-right">
+                <a href="../../index.html#projects" class="footer-link">Back to Portfolio</a>
+                <a href="https://www.linkedin.com/in/geethika-a-8339181ba" target="_blank" rel="noopener" class="footer-link"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                <a href="mailto:reddyageethika@gmail.com" class="footer-link"><i class="fa-solid fa-envelope"></i> Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
